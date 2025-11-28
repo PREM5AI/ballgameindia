@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-wrapper {
+    position: relative;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 32px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 0 10px red;
+}
+
+#replayBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background: darkred;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#jumpscare {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background: url('https://i.imgur.com/f0Q3zWb.jpeg');
+    background-size: cover;
+    filter: brightness(200%);
+    animation: flash 0.15s linear;
+}
+
+@keyframes flash {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    100% { opacity: 0; }
+}
